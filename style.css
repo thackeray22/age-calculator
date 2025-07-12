@@ -103,14 +103,42 @@ body.dark .container {
 /* Background text styling */
 .background-text {
   position: fixed;
-  top: 20%;
-  left: 10%;
-  transform: none;
-  font-size: 36px;
-  color: rgba(0, 0, 0, 0.2);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  color: rgba(255, 255, 255, 0.1);
   font-weight: bold;
   z-index: 0;
   pointer-events: none;
   user-select: none;
   white-space: nowrap;
+}
+
+#photoPreview {
+  margin-top: 10px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: none;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+  body {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .container {
+    width: 100%;
+    margin: 10px;
+  }
+
+  .background-text {
+    font-size: 24px;
+    left: 5%;
+    top: 10%;
+  }
 }

@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="background-text">CALCULATE YOUR AGE BY PRAKHAR's SOFTWARE</div>
+  <div class="background-text">DEVELOPED BY PRAKHAR</div>
   <div class="container">
     <!-- Dark Mode Toggle Switch -->
     <label class="switch">
@@ -19,11 +19,20 @@
     <h1>Age Calculator</h1>
     <label for="dob">Enter Your Date of Birth:</label>
     <input type="date" id="dob" />
+    <input type="file" id="photoUpload" accept="image/*" />
+    <img id="photoPreview" src="" alt="Profile Preview" />
+
     <button onclick="calculateAge()">Calculate Age</button>
     <button onclick="window.print()">Print / Save as PDF</button>
 
     <div id="result"></div>
+    <div id="countdown"></div>
+    <div id="zodiac"></div>
+    <div id="funFacts"></div>
   </div>
+
+  <audio id="clickSound" src="https://www.soundjay.com/button/beep-07.wav" preload="auto"></audio>
+  <audio id="birthdaySound" src="https://www.soundjay.com/human/happy-birthday-to-you-sung-by-crowd.mp3" preload="auto"></audio>
 
   <script src="script.js"></script>
 </body>
