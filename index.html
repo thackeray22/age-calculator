@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Age Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="background-text">CALCULATE YOUR AGE BY PRAKHAR's SOFTWARE</div>
+  <div class="container">
+    <!-- Dark Mode Toggle Switch -->
+    <label class="switch">
+      <input type="checkbox" id="toggleTheme">
+      <span class="slider"></span>
+      Dark Mode
+    </label>
+
+    <h1>Age Calculator</h1>
+    <label for="dob">Enter Your Date of Birth:</label>
+    <input type="date" id="dob" />
+    <button onclick="calculateAge()">Calculate Age</button>
+    <button onclick="window.print()">Print / Save as PDF</button>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
